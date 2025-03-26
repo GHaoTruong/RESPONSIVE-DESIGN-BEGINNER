@@ -1,3 +1,5 @@
+@use '../util/' as util;
+
 html {
   box-sizing: border-box;
 }
@@ -9,9 +11,9 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: lightblue;
-  color: black;
+  font-family: util.$font;
+  background-color: var(--background-color);
+  color: var(--text-color);
   margin: 0;
   padding: 0;
 }
